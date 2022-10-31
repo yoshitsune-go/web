@@ -1,23 +1,21 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
-  </head>
-  <body>
-    日付を選択してください。
-    <input type="text" id="target">
-    <script>
-    $(function() {
-  $('#target').datepicker({
-    minDate: new Date(), // 前日以前は選択不可
-    maxDate: '+1y +6m',  // 1年半後まで選択可
-  });
-});    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-datetimepicker@2.5.20/build/jquery.datetimepicker.full.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-datetimepicker@2.5.20/jquery.datetimepicker.css">
+
+<script type="text/javascript">
+<!--
+$(function () {
+  $("#wkDateTime").datetimepicker();
+});
+//-->
+</script>
+
+<div style="background-color:#CCC; padding : 20px;">
+  <input type="text" id="wkDateTime">
+</div>
 
   </body>
 </html>
