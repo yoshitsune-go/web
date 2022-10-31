@@ -8,7 +8,10 @@
 <script type="text/javascript">
 <!--
 $(function () {
-  $("#wkDateTime").datetimepicker();
+  $("#wkDateTime").datetimepicker(
+    minDate: new Date(), // 前日以前は選択不可
+    maxDate: '+1y +6m',  // 1年半後まで選択可
+  );
 });
 //-->
 </script>
